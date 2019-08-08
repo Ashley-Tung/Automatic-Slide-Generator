@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<center>
+<input type="button" value="Send feedback email" onClick="clickMe();" />
+<script>function clickMe(){
+  google.script.run.withSuccessHandler(function (time) {
+    alert("Feedback email sent");
+    }).formEmail();
+  }</script>
+</center>
+</html>
+
+
