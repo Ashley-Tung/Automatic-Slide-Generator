@@ -194,7 +194,7 @@ function archiveAgenda() {
   
   // Removes the agenda items from the current agenda
   var agendaLastRow = sheet.getLastRow();
-  var agendaItems = sheet.getRange("A6:D" + agendaLastRow );
+  var agendaItems = sheet.getRange("A6:D"+agendaLastRow );
   agendaItems.clearContent();
     
   // Inserts the timestamp for each newly archived agenda item into the archive sheet
